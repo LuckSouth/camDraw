@@ -1,0 +1,7 @@
+{
+  "name": "camDrawning",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
