@@ -6,16 +6,19 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { StoryPhotoPage } from '../pages/story-photo/story-photo';
 import { CanvasDraw } from '../components/canvas-draw/canvas-draw';
 
+import { Camera } from '@ionic-native/camera'
+import { FotoPage } from '../pages/foto/foto'
+
+import { TestePage } from '../pages/teste/teste'
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    StoryPhotoPage,
-    CanvasDraw
-
+    CanvasDraw,
+    FotoPage,
+    TestePage
   ],
   imports: [
     BrowserModule,
@@ -25,13 +28,15 @@ import { CanvasDraw } from '../components/canvas-draw/canvas-draw';
   entryComponents: [
     MyApp,
     HomePage,
-    StoryPhotoPage,
-    CanvasDraw
+    FotoPage,
+    TestePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Camera
+
   ]
 })
 export class AppModule {}

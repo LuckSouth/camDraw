@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Teste 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <button ion-button full (click)="takePhoto()" >
+    <ion-icon name="camera"></ion-icon>Tirar foto
+    </button>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 >
+          <ion-card class="block">
+          <ion-icon  name="trash" class="deleteIcon"></ion-icon>
+          <img src="someimage.png" />
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid> -->
+
+    <!-- <ion-col col-6 *ngFor="let photo of photos; let id = index">
+      <ion-card class="block">
+        <ion-icon name="trash" class="deleteIcon" (click)="deletePhoto(id)"></ion-icon>
+        <img [src]="photo" *ngIf="photo" />
+      </ion-card>
+    </ion-col> -->
+
+    <ion-card>
+      <ion-card-content>
+        Hello World, this is my camera app
+
+        <button (click)="takePicture()">Take a Picture</button>
+
+        Latest Picture:
+        <img [src]="base64Image" *ngIf="base64Image" />
+      </ion-card-content>
+    </ion-card>
+
+    <button ion-button color="dark" (click)="lucas()">Teste</button>
+
+</ion-content>
